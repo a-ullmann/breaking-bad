@@ -1,6 +1,4 @@
-# breaking-bad
-
-Project 2 - Breaking Bad Characters
+# Project 2 - Breaking Bad Characters
 
 
 <h2>Description</h2>
@@ -21,7 +19,7 @@ https://sweet-puffpuff-02d75b.netlify.app/characters
 
 <h2>Getting Started/Code Installation</h2>
 
-The code can be found on<a href="https://github.com/a-ullmann/breaking-bad" target="_blank"> my personal GitHub page.</a>
+The code can be found on<a href="https://github.com/a-ullmann/breaking-bad"> my personal GitHub page.</a>
 
 
 
@@ -35,10 +33,12 @@ This project was completed within two days in a group of two. It was a pleasure 
 <h2>Technologies Used</h2>
 
 <h4>CSS:</h4>
+<ul>
 Styling of the individual elements on all pages
 Various flex-box elements to position them dynamically
 Imported custom font
 Conditional colouring of their status
+</ul>
 
 <h4>React-Bootstrap:</h4>
 Getting first experience with using bootstrap, allowing for a more efficient way of styling. 
