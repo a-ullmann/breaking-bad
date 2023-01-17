@@ -3,6 +3,8 @@
 
 <h2>Description</h2>
 
+<img src="/src/images/readMe-images/landing.png" alt="landing page" title="Landing Page">
+
 This project’s goal was to pull data from various APIs to create a character index for the infamous TV-show ‘Breaking Bad’. The final product consists of different functionality, such as the ability to search a character by their name, as well as filtering them by their status (whether they were alive or deceased by the end of the show). When clicking on a character, more information gets displayed, including their in-show nickname, occupation and series appeared in. As an additional feature, a button was introduced to their individual page, that displays a random quote from the respective character.
 
 This project used CSS, JavaScript, React, and elements from react-router-dom, react-bootstrap and Axios.
@@ -41,16 +43,21 @@ This project was completed within two days in a group of two. It was a pleasure 
 </ul>
 
 <h4>React-Bootstrap:</h4>
-Getting first experience with using bootstrap, allowing for a more efficient way of styling. 
+<li>Getting first experience with using bootstrap, allowing for a more efficient way of styling. </li>
+
 
 <h4>JavaScript & React:</h4>
-Axios was used to fetch data from three different APIs
-Imported from react, we used useState to track the state of data and useEffect to control the data after a render. This allowed our site to be more responsive and therefore more enjoyable for the user. 
-To navigate between our internal pages, we imported Link from react. 
+<ul>
+  <li>Axios was used to fetch data from three different APIs.</li>
+  <li>Imported from react, we used useState to track the state of data and useEffect to control the data after a render. This allowed our site to be more responsive and therefore more enjoyable for the user. </li>
+  <li>To navigate between our internal pages, we imported Link from react.</li>
+</ul>
 
 <h4>Other:</h4>
-Insomnia was used to inspect the different APIs and gain paths to specific keys. 
-Excalidraw.com to draw wireframes and sketch out the project.
+<ul>
+  <li>Insomnia was used to inspect the different APIs and gain paths to specific keys.</li>
+  <li>Excalidraw.com to draw wireframes and sketch out the project.</li>
+</ul>
 
 
 
@@ -59,11 +66,13 @@ Excalidraw.com to draw wireframes and sketch out the project.
 Create a functional and interactive app with React using APIs. </br>
 ​
 <h5>The app must:​</h5>
-Consume a public API – this could be anything but it must make sense for your project.</br>
-Have several components</br>
-The app can have a router - with several "pages", this is up to you and if it makes sense for your project.</br>
-Include wireframes - that you designed before building the app.</br>
-Be deployed online and accessible to the public (hosted on your public github, not GA github!)</br>
+<ul>
+  <li>Consume a public API – this could be anything but it must make sense for your project.</br>
+  Have several components</br></li>
+  <li>The app can have a router - with several "pages", this is up to you and if it makes sense for your project.</br></li>
+  <li>Include wireframes - that you designed before building the app.</br></li>
+  <li>Be deployed online and accessible to the public (hosted on your public github, not GA github!)</br></li>
+</ul>
 ​​
 
 
@@ -95,6 +104,7 @@ We used an onChange command in combination with our handleChange function to det
 <h2>Challenges</h2>
 
 The biggest challenge by far was to implement the search function. Getting it set up took us a long time as using RegExp was very new to us. After a lot of trial and error, some research and input from our instructor, we managed to successfully implement it. 
+
 Another challenge we came across, seemed like an easy fix but turned out to be more difficult than we thought. When we imported the ‘occupation’ and ‘series appeared in’, it would return the data as a combined string. For example, ‘series appeared in’ would appear as: ‘12345’ instead of ‘1, 2, 3, 4, 5’. This same problem would appear for the characters’ occupation.  In the end we created a work-around of the following: 
 
 This had to be done due to the fact that we could not directly mutate the state of the data. We had to take the individual keys, spread this into a new object, take its values and join them with a comma and a space. This would render every time characters are rendered. 
