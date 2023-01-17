@@ -2,7 +2,8 @@
 
 Project 2 - Breaking Bad Characters
 
-Description
+<h2>Description</h2>
+
 
 This project’s goal was to pull data from various APIs to create a character index for the infamous TV-show ‘Breaking Bad’. The final product consists of different functionality, such as the ability to search a character by their name, as well as filtering them by their status (whether they were alive or deceased by the end of the show). When clicking on a character, more information gets displayed, including their in-show nickname, occupation and series appeared in. As an additional feature, a button was introduced to their individual page, that displays a random quote from the respective character.
 
