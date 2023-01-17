@@ -40,15 +40,15 @@ Various flex-box elements to position them dynamically
 Imported custom font
 Conditional colouring of their status
 
-React-Bootstrap:
+<h4>React-Bootstrap:</h4>
 Getting first experience with using bootstrap, allowing for a more efficient way of styling. 
 
-JavaScript & React:
+<h4>JavaScript & React:</h4>
 Axios was used to fetch data from three different APIs
 Imported from react, we used useState to track the state of data and useEffect to control the data after a render. This allowed our site to be more responsive and therefore more enjoyable for the user. 
 To navigate between our internal pages, we imported Link from react. 
 
-Other:
+<h4>Other:</h4>
 Insomnia was used to inspect the different APIs and gain paths to specific keys. 
 Excalidraw.com to draw wireframes and sketch out the project.
 
@@ -56,14 +56,14 @@ Excalidraw.com to draw wireframes and sketch out the project.
 
 <h2>Brief</h2>
 
-Create a functional and interactive app with React using APIs. 
+Create a functional and interactive app with React using APIs. </br>
 ​
-The app must:​
-Consume a public API – this could be anything but it must make sense for your project.
-Have several components
-The app can have a router - with several "pages", this is up to you and if it makes sense for your project.
-Include wireframes - that you designed before building the app.
-Be deployed online and accessible to the public (hosted on your public github, not GA github!)
+<h5>The app must:​</h5>
+Consume a public API – this could be anything but it must make sense for your project.</br>
+Have several components</br>
+The app can have a router - with several "pages", this is up to you and if it makes sense for your project.</br>
+Include wireframes - that you designed before building the app.</br>
+Be deployed online and accessible to the public (hosted on your public github, not GA github!)</br>
 ​​
 
 
