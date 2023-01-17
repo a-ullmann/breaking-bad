@@ -21,7 +21,7 @@ https://sweet-puffpuff-02d75b.netlify.app/characters
 
 <h2>Getting Started/Code Installation</h2>
 
-The code can be found in<a href="https://github.com/a-ullmann/breaking-bad"> my personal GitHub page.</a>
+The code can be found on<a href="https://github.com/a-ullmann/breaking-bad" target="_blank"> my personal GitHub page.</a>
 
 
 
