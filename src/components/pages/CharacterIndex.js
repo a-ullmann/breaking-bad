@@ -16,7 +16,7 @@ const CharacterIndex = () => {
 
   const [characters, setCharacters] = useState([])
   const [filteredCharacters, setFilteredCharacters] = useState([])
-  const [errors, setErrors] = useState(false)
+  const [errors, setErrors] = useState([])
 
   useEffect(() => {
     const getData = async () => {
@@ -36,7 +36,9 @@ const CharacterIndex = () => {
   return (
     <main className='char-index-page'>
       <Container className='char-container mt-4'>
-        <Filters characters={characters} setFilteredCharacters={setFilteredCharacters} filteredCharacters={filteredCharacters} />
+        <Filters characters={characters}
+          setFilteredCharacters={setFilteredCharacters}
+          filteredCharacters={filteredCharacters} />
         {filteredCharacters.length ?
           <Row>
             {filteredCharacters.map(char => {

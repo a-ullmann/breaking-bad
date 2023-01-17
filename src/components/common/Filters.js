@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 
 
-const Filters = ({ characters, filteredCharacters, setFilteredCharacters }) => {
+const Filters = ({ characters, setFilteredCharacters }) => {
 
   const [filterInput, setFilterInput] = useState({
     search: '',
@@ -13,23 +13,16 @@ const Filters = ({ characters, filteredCharacters, setFilteredCharacters }) => {
   useEffect(() => {
     const regex = new RegExp(filterInput.search, 'i')
     const filteredArray = characters.filter(char => {
-      return regex.test(char.name) && (char.category === filterInput.category || filterInput.category === 'All') && (char.status === filterInput.status || filterInput.status === 'All')
+      return regex.test(char.name) &&
+        (char.category === filterInput.category ||
+          filterInput.category === 'All') &&
+        (char.status === filterInput.status ||
+          filterInput.status === 'All')
 
     })
     setFilteredCharacters(filteredArray)
   }, [filterInput, characters, setFilteredCharacters])
 
-  const searchCompare = (e) => {
-    let search = ''
-    search = e.target.value
-    const regex = new RegExp(search, 'i')
-    console.log('search ->', search)
-    const searched = filteredCharacters.filter(char => {
-      const { name } = char
-      return (name === search && regex.test(search))
-    })
-    setFilteredCharacters(searched)
-  }
 
   const handleChange = (e) => {
     setFilterInput({ ...filterInput, [e.target.name]: e.target.value })
@@ -38,7 +31,12 @@ const Filters = ({ characters, filteredCharacters, setFilteredCharacters }) => {
   return (
     <>
       <div className='search-function'>
-        <input onChange={handleChange} type='text' placeholder="Search name here" name='search' id='filter' value={filterInput.search} />
+        <input onChange={handleChange}
+          type='text'
+          placeholder="Search name here"
+          name='search'
+          id='filter'
+          value={filterInput.search} />
         <select onChange={handleChange} name='status' id='filter' value={filterInput.status}>
           <option value='All'>Dead or Alive</option>
           <option value='Alive'>Alive</option>
