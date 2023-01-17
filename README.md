@@ -114,7 +114,7 @@ The biggest challenge by far was to implement the search function. Getting it se
 
 Another challenge we came across, seemed like an easy fix but turned out to be more difficult than we thought. When we imported the ‘occupation’ and ‘series appeared in’, it would return the data as a combined string. For example, ‘series appeared in’ would appear as: ‘12345’ instead of ‘1, 2, 3, 4, 5’. This same problem would appear for the characters’ occupation.  In the end we created a work-around of the following: 
 
-<img src="/src/images/readMe-images/useEffect.png" alt="Occurance Workaround" title="Occurance Workaround">
+<img src="/src/images/readMe-images/useEffect.png" alt="Occurance Workaround" title="Occurance Workaround" style="display: inline-block">
 
 This had to be done due to the fact that we could not directly mutate the state of the data. We had to take the individual keys, spread this into a new object, take its values and join them with a comma and a space. This would render every time characters are rendered. 
 
