@@ -34,10 +34,10 @@ This project was completed within two days in a group of two. It was a pleasure 
 
 <h4>CSS:</h4>
 <ul>
-  <i>Styling of the individual elements on all pages</i>
-Various flex-box elements to position them dynamically
-Imported custom font
-Conditional colouring of their status
+  <li>Styling of the individual elements on all pages</li>
+  <li>Various flex-box elements to position them dynamically</li>
+  <li>Imported custom font</li>
+  <li>Conditional colouring of their status</li>
 </ul>
 
 <h4>React-Bootstrap:</h4>
