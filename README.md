@@ -1,9 +1,9 @@
 # Project 2 - Breaking Bad Characters
 
+<img src="/src/images/readMe-images/landing.png" alt="landing page" title="Landing Page">
 
 <h2>Description</h2>
 
-<img src="/src/images/readMe-images/landing.png" alt="landing page" title="Landing Page">
 
 This project’s goal was to pull data from various APIs to create a character index for the infamous TV-show ‘Breaking Bad’. The final product consists of different functionality, such as the ability to search a character by their name, as well as filtering them by their status (whether they were alive or deceased by the end of the show). When clicking on a character, more information gets displayed, including their in-show nickname, occupation and series appeared in. As an additional feature, a button was introduced to their individual page, that displays a random quote from the respective character.
 
@@ -13,22 +13,21 @@ This project used CSS, JavaScript, React, and elements from react-router-dom, re
 </br>
 <h2>Deployment link</h2>
 
-The project was deployed on the netlify app. It can be found in the following link and requires no log in to be used:
+The project was deployed on the netlify app. It can be found <a href="https://sweet-puffpuff-02d75b.netlify.app/characters"> here</a> and requires no log in to be used.
 
-https://sweet-puffpuff-02d75b.netlify.app/characters
 
 
 </br>
 <h2>Getting Started/Code Installation</h2>
 
-The code can be found on<a href="https://github.com/a-ullmann/breaking-bad"> my personal GitHub page.</a>
+The code can be found on <a href="https://github.com/a-ullmann/breaking-bad"> my personal GitHub page.</a>
 
 
 
 </br>
 <h2>Timeframe & Working Team</h2>
 
-This project was completed within two days in a group of two. It was a pleasure working with Archie Rowan Hamilton. 
+This project was completed within two days in a group of two. It was a pleasure working with <a href="https://github.com/ajx-mijo"> Archie Rowan Hamilton</a>. 
 
 
 </br>
@@ -67,11 +66,11 @@ Create a functional and interactive app with React using APIs. </br>
 ​
 <h5>The app must:​</h5>
 <ul>
-  <li>Consume a public API – this could be anything but it must make sense for your project.</br>
-  Have several components</br></li>
-  <li>The app can have a router - with several "pages", this is up to you and if it makes sense for your project.</br></li>
-  <li>Include wireframes - that you designed before building the app.</br></li>
-  <li>Be deployed online and accessible to the public (hosted on your public github, not GA github!)</br></li>
+  <li>Consume a public API – this could be anything but it must make sense for your project.</li>
+  <li>Have several components.</li>
+  <li>The app can have a router - with several "pages", this is up to you and if it makes sense for your project.</li>
+  <li>Include wireframes - that you designed before building the app.</li>
+  <li>Be deployed online and accessible to the public (hosted on your public github, not GA github!)</li>
 </ul>
 ​​
 
@@ -114,10 +113,7 @@ The biggest challenge by far was to implement the search function. Getting it se
 
 Another challenge we came across, seemed like an easy fix but turned out to be more difficult than we thought. When we imported the ‘occupation’ and ‘series appeared in’, it would return the data as a combined string. For example, ‘series appeared in’ would appear as: ‘12345’ instead of ‘1, 2, 3, 4, 5’. This same problem would appear for the characters’ occupation.  In the end we created a work-around of the following: 
 
-<img src="/src/images/readMe-images/useEffect.png" alt="Occurance Workaround" title="Occurance Workaround" style="display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%">
+<img src="/src/images/readMe-images/useEffect.png" alt="Occurance Workaround" title="Occurance Workaround" >
 
 This had to be done due to the fact that we could not directly mutate the state of the data. We had to take the individual keys, spread this into a new object, take its values and join them with a comma and a space. This would render every time characters are rendered. 
 
